@@ -1,2 +1,2 @@
-# Krzysztof-obaziewicz
+# Krzysztof Lobaziewicz
 Krzysztof Łobaziewicz
