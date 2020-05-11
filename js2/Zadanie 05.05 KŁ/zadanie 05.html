@@ -36,7 +36,7 @@
 
 <style>
 body {
-    margin: 0;
+  margin: 0;
 	text-align: center;
 }
 .logo {
@@ -50,28 +50,28 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 25%;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
 }
 
 li a {
   display: block;
-  color: #000;
-  padding: 8px 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
-li a.active {
-  background-color: #4CAF50;
-  color: white;
+li a:hover:not(.active) {
+  background-color: #111;
 }
 
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+.active {
+  background-color: #4CAF50;
 }
 #za {
 	padding-top: 40px;
@@ -83,7 +83,7 @@ img {
 .ft2 {
 	background-color: #555;
 	z-index: 99;
-	color: white
+	color: hsl(0, 0%, 100%)
 }
 </style>
 </head>
@@ -96,13 +96,13 @@ img {
 </header>
 
 <ul>
-    <li class="a"><a class="active" href="#home">Wszystkie</a></li>
-    <li class="a"><a href="#ilu">Ilustracje</a></li>
-    <li class="a"><a href="#cont">Plakaty</a></li>
-    <li class="a"><a href="#typ">Typografia</a></li>
-    <li class="a"><a href="#opa">Opakowania</a></li>
+  <li><a class="active" href="#home">Wszystkie</a></li>
+  <li><a href="#news">ilustracje</a></li>
+  <li><a href="#contact">Plakaty</a></li>
+  <li><a href="#contact">Typografia</a></li>
+  <li><a href="#about">Opakowania</a></li>
 </ul>
-<div style="margin-left:25%;padding:1px 16px;">
+<div style="padding:1px 16px;">
 <section class="portfolio">
   <figure class="four columns all poster" data category="ilustracje">
     <picture>
@@ -111,8 +111,8 @@ img {
         <img src="images/3.png" alt="To jest miniatura portfolio." style="width: auto;">
     </picture>
     <figcaption>
-      <h4>Lorem Ipsum</h4>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <h4>Lorem Ipsum</h4>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 	  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 	  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 	  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -123,9 +123,7 @@ img {
 
 <footer class="container clearfix">
   <div class="social">
-<p>Dribbble</p>
-<p>Facebook</p>
-<p>Twitter</p>
+<img src="images/d1.png" onmouseover="this.src='images/d2.png'"> <img src="images/f1.png" onmouseover="this.src='images/f2.png'"> <img src="images/t1.png" onmouseover="this.src='images/t2.png'">
   </div>
   <div class="ft2">
   <div class="contact">
